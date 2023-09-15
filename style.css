@@ -7,7 +7,7 @@
   src: url(./fonts/616fd1dd00cf6c70f978fc69_Canopee.woff2);
 }
 @font-face {
-  font-family: Editorial New;
+  font-family: Editorial New Light;
   src: url(./fonts/5f242a694256f02b944d5767_EditorialNew-Light.woff2);
 }
 
@@ -1052,8 +1052,8 @@ a {
 .card-content .card-info {
   display: flex;
   align-items: center;
-  margin-top: 4.5vw;
   position: absolute;
+  margin-top: 3vw;
 }
 
 .card-content .card-info .box {
@@ -1273,19 +1273,30 @@ li span {
   animation-play-state: paused;
 }
 
-@media screen and (max-width: 768px) {
-  #page1 #nav h5 {
-    font-size: 1.45vw;
-  }
-}
 @media screen and (max-width: 480px) {
   #page1 #nav h5 {
     font-size: 1.75vw;
     margin-top: 0.5vw;
   }
 
+  #nav-inner {
+    z-index: 1;
+    height: 2.8vh;
+    background-color: #c4bcb3;
+    border-bottom: 1px solid #706d67;
+    justify-content: space-between;
+    padding: 3.2vh;
+  }
+
   #page1 #nav-inner i {
     font-size: 4vw;
+  }
+
+  #elems {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 8vh;
   }
 
   #elem1 .item h4 {
